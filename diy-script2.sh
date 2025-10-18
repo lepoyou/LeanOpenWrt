@@ -58,15 +58,15 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # Nikki
-git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/nikki
-git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-app-nikki
-git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-i18n-nikki-zh-cn
+#git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/nikki
+#git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-app-nikki
+#git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-i18n-nikki-zh-cn
 
 
 
 # SmartDNS
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
-git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
+#git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+#git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # msd_lite
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
