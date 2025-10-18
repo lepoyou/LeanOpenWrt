@@ -57,11 +57,12 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 # 更改 Argon 主题背景
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
-# 晶晨宝盒
-git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
-sed -i "s|firmware_repo.*|firmware_repo 'https://github.com/haiibo/OpenWrt'|g" package/luci-app-amlogic/root/etc/config/amlogic
-# sed -i "s|kernel_path.*|kernel_path 'https://github.com/ophub/kernel'|g" package/luci-app-amlogic/root/etc/config/amlogic
-sed -i "s|ARMv8|ARMv8_PLUS|g" package/luci-app-amlogic/root/etc/config/amlogic
+# Nikki
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/nikki
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-app-nikki
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-i18n-nikki-zh-cn
+
+
 
 # SmartDNS
 git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
@@ -75,7 +76,7 @@ git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 # Alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
+#git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
 # openlist2
 git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/luci-app-openlist2
