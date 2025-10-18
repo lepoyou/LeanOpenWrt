@@ -77,6 +77,9 @@ git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mo
 # Alist
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
+# openlist2
+git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/luci-app-openlist2
+
 # DDNS.to
 git_sparse_clone main https://github.com/linkease/nas-packages-luci luci/luci-app-ddnsto
 git_sparse_clone master https://github.com/linkease/nas-packages network/services/ddnsto
